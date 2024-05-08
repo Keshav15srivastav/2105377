@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* Slightly lighter background color for freshness */
+  animation: bgAnimation 20s infinite alternate; /* Background animation */
+}
+
+@keyframes bgAnimation {
+  0% { background-color: #f8f8f8; }
+  50% { background-color: #e5f2ff; } /* Light blue */
+  100% { background-color: #f8f8f8; }
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px; /* Increased padding for better spacing */
+  background-color: #ffffff; /* White background for product list */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  animation: fadeInUp 1s ease; /* Fade in animation */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-list h1 {
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  margin-bottom: 30px; /* Increased margin bottom for better separation */
+  color: #333; /* Darkened font color for better readability */
+}
+
+.product-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-list li {
+  margin-bottom: 15px; /* Slightly increased spacing between list items */
+}
+
+.product-list a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s; /* Added transition for smoother color change */
+}
+
+.product-list a:hover {
+  color: #0056b3; /* Darkened color on hover for better feedback */
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px; /* Increased padding for better spacing */
+  background-color: #ffffff; /* White background for product details */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Slightly increased border radius for smoother edges */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Enhanced box shadow for depth */
+  margin: 30px auto; /* Increased margin for better separation */
+  max-width: 700px; /* Increased max-width for larger screens */
+  animation: fadeIn 1s ease; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-details h1 {
+  font-size: 2.5rem; /* Matching font size with product list heading */
+  margin-bottom: 25px; /* Slightly increased margin bottom for better spacing */
+}
+
+.product-details p {
+  font-size: 1.3rem; /* Slightly increased font size for better readability */
+  margin-bottom: 15px; /* Slightly decreased margin bottom for better spacing */
+  color: #555; /* Darkened font color for better readability */
+}
+
+.product-details p:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+}
